@@ -40,7 +40,7 @@ CREATE TABLE ProductInventory (
 --rollback DROP TABLE ProductInventory;
 
 --changeset mate.academy:5 labels:0.0.2
-CREATE TABLE User (
+CREATE TABLE Users (
     ID INT,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
@@ -49,6 +49,6 @@ CREATE TABLE User (
 --rollback DROP TABLE User;
 
 --changeset yourname:add_email_index labels:0.0.3
-CREATE INDEX idx_users_email ON User(Email);
+CREATE INDEX idx_users_email ON Users(Email);
 
 --rollback DROP INDEX idx_users_email ON Users;
