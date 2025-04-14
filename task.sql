@@ -46,7 +46,7 @@ CREATE TABLE Users (
     LastName VARCHAR(50),
     Email VARCHAR(50)
 );
---rollback DROP TABLE User;
+--rollback DROP TABLE Users;
 
 --changeset yourname:add_email_index labels:0.0.3
 CREATE INDEX idx_users_email ON Users(Email);
